@@ -54,12 +54,22 @@ unset HELM_PLUGIN_PASSWORD
 cache_repos_enabled=0
 if [ -n "${HELM_GIT_REPO_CACHE:-}" ]; then
   cache_repos_enabled=1
+  # Create cache directory if it doesn't exist
+  mkdir -p "${HELM_GIT_REPO_CACHE}" || {
+    echo "Error in plugin '$bin_name': Failed to create repo cache directory: ${HELM_GIT_REPO_CACHE}" >&2
+    exit 1
+  }
 fi
 readonly cache_repos_enabled
 cache_charts_enabled=0
 if [ -n "${HELM_GIT_CHART_CACHE:-}" ]; then
   cache_charts_enabled=1
   cache_charts_strategy="${HELM_GIT_CHART_CACHE_STRATEGY:-}"
+  # Create cache directory if it doesn't exist
+  mkdir -p "${HELM_GIT_CHART_CACHE}" || {
+    echo "Error in plugin '$bin_name': Failed to create chart cache directory: ${HELM_GIT_CHART_CACHE}" >&2
+    exit 1
+  }
 else
   cache_charts_strategy=""
 fi
