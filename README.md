@@ -7,12 +7,14 @@
 
 The Helm downloader plugin that provides GIT protocol support.
 
-This fits multiple use cases:
+It fits multiple use cases:
 
 - Need to keep charts private
 - Doesn't want to package charts before installing
 - Charts in a sub-path, or with another ref than `master`
 - Pull values files directly from (private) Git repository
+
+Compatibility: Helm v2.9+, v3, v4.0.5+
 
 ## Install
 
