@@ -137,7 +137,7 @@ You can enable more advanced output by setting `HELM_GIT_TRACE` environment vari
 
 Contributions are welcome! Please see [these instructions](.github/CONTRIBUTING.md) that will help you to develop the plugin.
 
-## Alternatives
+## Alternatives for the project
 
 - <https://github.com/diwakar-s-maurya/helm-git>
 - <https://github.com/sagansystems/helm-github>
