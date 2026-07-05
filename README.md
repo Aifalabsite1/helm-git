@@ -1,4 +1,4 @@
-## helm-git 
+## helm-git **
 
 ![GitHub Actions](https://github.com/aslafy-z/helm-git/actions/workflows/release.yml/badge.svg?branch=master)
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](./LICENSE)
