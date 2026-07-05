@@ -74,7 +74,7 @@ Pulling value files:
 
     helm install . -f git+https://github.com/aslafy-z/helm-git@tests/fixtures/example-chart/values.yaml
 
-### Environment variables
+### Environment variables ***
 
 **name**|**description**|**default**
 --------|---------------|-----------
